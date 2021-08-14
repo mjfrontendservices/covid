@@ -1,7 +1,7 @@
 {
     "short_name": "Covid Symptoms",
     "name": "Covid 19 Symptoms",
-    "description": "Lorem ipsum app manifest",
+    "description": "This app contains some of the most common symptoms of Corona Virus. Using AI's deep neural networks, the person can be diagnosed based on their symptoms as infected or not on this desease. This will output a probability (percentage) as a result based on the activated symptoms. The higher probability (more than 50%), the higher the chance that the person is infected.",
     "icons": [
         {
             "src": "./96x96.png",
@@ -15,7 +15,7 @@
         }
     ],
     "theme_color": "#fff",
-    "start_url": "./covid.html",
+    "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#000",
     "orientation": "portrait"
