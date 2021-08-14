@@ -14,7 +14,7 @@
             "sizes": "192x192"
         }
     ],
-    "theme_color": "#000",
+    "theme_color": "#fff",
     "start_url": "./covid.html",
     "display": "standalone",
     "background_color": "#000",
