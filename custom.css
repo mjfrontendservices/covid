@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin-bottom: 0px;
+}
+
+/* global */
+
+.red{
+    color: red;
+}
+
+.green{
+    color: green;
+}
+
+/* header */
+
+header{
+    padding: 10px 0 10px 0;
+    background: #f4f4f4;
+    color: red;
+    text-align: center;
+}
+
+header h1{
+    font-size: 20px;
+}
+
+/* symptoms */
+
+.symptoms{
+    text-align: center;
+}
+
+.symp{
+    padding: 20px 0 20px 0;
+}
+
+/* pred */
+
+.predbutton{
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+.predbutton button{
+    background: orangered;
+    color: aliceblue;
+    font-size: 15px;
+    border: none;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+}
+
+/* modal */
+
+.modal-body{
+    text-align: center;
+}
+
+.modal-body h1{
+    font-size: 20px;
+}
+
+.modal-body p{
+    font-size: 13px;
+}
+
+.prob, .per{
+    font-size: 20px;
+}
+
+.prob .errs,
+.per .errs{
+    font-size: 12px;
+    color: red;
+}
+
+/* index */
+
+.intro{
+    padding: 20px 0 20px 0;
+    font-size: 12px;
+}
+
+.buttons{
+    padding: 0 0 20px 0;
+    text-align: center;
+}
+
+.buttons button{
+    margin-bottom: 20px;
+    border: none;
+    font-size: 12px;
+    width: 70%;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px ;
+}
+
+.buttons #install{
+    background: rgb(4, 112, 201);
+    color: aliceblue;
+}
+
+.buttons .noinstall{
+    background: #e8491d;
+    color: aliceblue;
+}

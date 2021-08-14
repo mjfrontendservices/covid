@@ -1,0 +1,22 @@
+{
+    "short_name": "Covid Symptoms",
+    "name": "Covid 19 Symptoms",
+    "description": "Lorem ipsum app manifest",
+    "icons": [
+        {
+            "src": "./96x96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "./192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ],
+    "theme_color": "#000",
+    "start_url": "./covid.html",
+    "display": "standalone",
+    "background_color": "#000",
+    "orientation": "portrait"
+}

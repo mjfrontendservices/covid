@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mark Jason Penote Espelita">
+    <meta name="keywords" content="covid19 predictor, covid diagnoses">
+    <meta name="description" content="This app contains some of the most common symptoms of Corona Virus. Using AI's deep neural networks, the
+    person can be diagnosed based on their symptoms as infected or not on this desease. This will
+    output
+    a probability (percentage) as a result based on the activated symptoms. The higher probability (more
+    than
+    50%), the
+    higher the chance that the person is infected.">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./libraries/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./libraries/bootstrap/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./libraries/bootstrap/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./libraries/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/brands.min.css">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/regular.min.css">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/solid.min.css">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/svg-with-js.min.css">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/v4-shims.min.css">
+    <!-- manifest -->
+    <link rel="manifest" href="./manifest_v2.json">
+    <!-- icon -->
+    <link rel="icon" href="./192x192.png">
+    <!-- custom -->
+    <link rel="stylesheet" href="./custom.css">
+    <title>Covid19 Predictor</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Covid19 Symptoms Diagnosis</h1>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <p>
+                <b>About this app</b><br><br>
+                This app contains some of the most common symptoms of Corona Virus. Using AI's deep neural networks, the
+                person can be diagnosed based on their symptoms as infected or not on this desease. This will
+                output
+                a probability (percentage) as a result based on the activated symptoms. The higher probability (more
+                than
+                50%), the
+                higher the chance that the person is infected.<br>
+                Please install the app for offline use.
+            </p>
+        </div>
+    </section>
+
+    <section class="buttons">
+        <div class="container">
+            <button id="install">Install App <i class="fa fa-download"></i></button><br>
+            <a href="./covid.html">
+                <button class="noinstall">Continue without installing <i class="fa fa-arrow-circle-right"></i></button>
+            </a>
+        </div>
+    </section>
+
+    <!-- jquery -->
+    <script src="./libraries/jquery/jquery.js"></script>
+    <!-- brainjs -->
+    <script src="./brain.js"></script>
+    <!-- bootstrap -->
+    <script src="./libraries/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./libraries/bootstrap/bootstrap.min.js"></script>
+    <!-- sw registration -->
+    <script src="./swr.js"></script>
+    <!-- custom -->
+    <script src="./install.js"></script>
+    <script src="./custom.js"></script>
+</body>
+
+</html>

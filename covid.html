@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mark Jason Penote Espelita">
+    <meta name="keywords" content="covid19 predictor, covid diagnoses">
+    <meta name="description" content="This app contains some of the most common symptoms of Corona Virus. Using AI's deep neural networks, the
+    person can be diagnosed based on their symptoms as infected or not on this desease. This will
+    output
+    a probability (percentage) as a result based on the activated symptoms. The higher probability (more
+    than
+    50%), the
+    higher the chance that the person is infected.">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./libraries/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./libraries/bootstrap/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./libraries/bootstrap/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./libraries/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/brands.min.css">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/regular.min.css">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/solid.min.css">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/svg-with-js.min.css">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/v4-shims.min.css">
+    <!-- manifest -->
+    <!-- <link rel="manifest" href="./manifest_v1.json"> -->
+    <!-- icon -->
+    <link rel="icon" href="./192x192.png">
+    <!-- custom -->
+    <link rel="stylesheet" href="./custom.css">
+    <title>Covid19 Predictor</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Covid Diagnosis</h1>
+        </div>
+    </header>
+
+    <section class="symptoms">
+        <div class="container">
+            <div class="symp">
+                <b>Breathing Problems</b><br>
+                <input type="radio" name="bp" id="bp" data="Hello" value="1"> Yes
+                <input type="radio" name="bp" id="bp" data="Hello" value="0"> No
+            </div>
+            <hr>
+            <div class="symp">
+                <b>Fever</b><br>
+                <input type="radio" name="f" id="f" value="1"> Yes
+                <input type="radio" name="f" id="f" value="0"> No
+            </div>
+            <hr>
+            <div class="symp">
+                <b>Dry Caugh</b><br>
+                <input type="radio" name="dc" id="dc" value="1"> Yes
+                <input type="radio" name="dc" id="dc" value="0"> No
+            </div>
+            <hr>
+            <div class="symp">
+                <b>Sore Throat</b><br>
+                <input type="radio" name="st" id="st" value="1"> Yes
+                <input type="radio" name="st" id="st" value="0"> No
+            </div>
+            <hr>
+            <div class="symp">
+                <b>Running Nose</b><br>
+                <input type="radio" name="rn" id="rn" value="1"> Yes
+                <input type="radio" name="rn" id="rn" value="0"> No
+            </div>
+            <hr>
+            <div class="symp">
+                <b>Asthma</b><br>
+                <input type="radio" name="asm" id="asm" value="1"> Yes
+                <input type="radio" name="asm" id="asm" value="0"> No
+            </div>
+            <hr>
+            <div class="symp">
+                <b>Chronic Lung Disease</b><br>
+                <input type="radio" name="cld" id="cld" value="1"> Yes
+                <input type="radio" name="cld" id="cld" value="0"> No
+            </div>
+            <hr>
+            <div class="symp">
+                <b>Headache</b><br>
+                <input type="radio" name="hache" id="hache" value="1"> Yes
+                <input type="radio" name="hache" id="hache" value="0"> No
+            </div>
+            <hr>
+            <div class="symp">
+                <b>Heart Disease</b><br>
+                <input type="radio" name="hdes" id="hdes" value="1"> Yes
+                <input type="radio" name="hdes" id="hdes" value="0"> No
+            </div>
+            <hr>
+            <div class="symp">
+                <b>Diabetes</b><br>
+                <input type="radio" name="dbts" id="dbts" value="1"> Yes
+                <input type="radio" name="dbts" id="dbts" value="0"> No
+            </div>
+            <hr>
+            <div class="symp">
+                <b>Hyper Tension</b><br>
+                <input type="radio" name="hpt" id="hpt" value="1"> Yes
+                <input type="radio" name="hpt" id="hpt" value="0"> No
+            </div>
+            <hr>
+            <div class="symp">
+                <b>Fatigue</b><br>
+                <input type="radio" name="ftg" id="ftg" value="1"> Yes
+                <input type="radio" name="ftg" id="ftg" value="0"> No
+            </div>
+            <hr>
+            <div class="symp">
+                <b>Gastrointestinal</b><br>
+                <input type="radio" name="gas" id="gas" value="1"> Yes
+                <input type="radio" name="gas" id="gas" value="0"> No
+            </div>
+            <hr>
+            <div class="symp">
+                <b>Abroad Travel</b><br>
+                <input type="radio" name="at" id="at" value="1"> Yes
+                <input type="radio" name="at" id="at" value="0"> No
+            </div>
+            <hr>
+            <div class="symp">
+                <b>Contact with COVID Patient</b><br>
+                <input type="radio" name="ccp" id="ccp" value="1"> Yes
+                <input type="radio" name="ccp" id="ccp" value="0"> No
+            </div>
+            <hr>
+            <div class="symp">
+                <b>Attended Large Gathering</b><br>
+                <input type="radio" name="alg" id="alg" value="1"> Yes
+                <input type="radio" name="alg" id="alg" value="0"> No
+            </div>
+            <hr>
+            <div class="symp">
+                <b>Visited Public Exposed Places</b><br>
+                <input type="radio" name="vpep" id="vpep" value="1"> Yes
+                <input type="radio" name="vpep" id="vpep" value="0"> No
+            </div>
+            <hr>
+            <div class="symp">
+                <b>Family Working in Public Exposed Places</b><br>
+                <input type="radio" name="fwipep" id="fwipep" value="1"> Yes
+                <input type="radio" name="fwipep" id="fwipep" value="0"> No
+            </div>
+            <hr>
+            <div class="symp">
+                <b>Wearing Masks</b><br>
+                <input type="radio" name="wm" id="wm" value="1"> Yes
+                <input type="radio" name="wm" id="wm" value="0"> No
+            </div>
+            <hr>
+            <div class="symp">
+                <b>Sanitization from Market</b><br>
+                <input type="radio" name="sfm" id="sfm" value="1"> Yes
+                <input type="radio" name="sfm" id="sfm" value="0"> No
+            </div>
+            <hr>
+        </div>
+    </section>
+
+    <section class="predbutton">
+        <div class="container">
+            <button class="predict" data-toggle="modal" data-target="#predictionModal"><i class="fa fa-check"></i>
+                Predict</button>
+        </div>
+    </section>
+
+    <!-- modal -->
+
+    <div id="predictionModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h1>Prediction</h1><br>
+                    <p>
+                        <b>Covid Probability</b><br>
+                        (Based on the inputted symptoms)<br><br>
+                    <div class="prob">
+                        <div class="spinner-border"></div>
+                    </div><br>
+
+                    <b>Percentage</b><br>
+                    <div class="per">
+                        <div class="spinner-border"></div>
+                    </div><br>
+
+                    <b>Outcome</b><br>
+                    <div class="out">
+                        <div class="spinner-border"></div>
+                    </div>
+
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default close" data-dismiss="modal">Back</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="./libraries/jquery/jquery.js"></script>
+    <!-- brainjs -->
+    <script src="./brain.js"></script>
+    <!-- bootstrap -->
+    <script src="./libraries/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./libraries/bootstrap/bootstrap.min.js"></script>
+    <!-- sw registration -->
+    <!-- <script src="./swr.js"></script> -->
+    <!-- custom -->
+    <!-- <script src="./install.js"></script> -->
+    <script src="./custom.js"></script>
+</body>
+
+</html>
